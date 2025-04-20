@@ -2,3 +2,8 @@ body{
     background-color: red;
     color: white;
 }
+
+.p-home{
+    font-size: 20px;
+    text-align: center
+}
