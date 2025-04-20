@@ -7,3 +7,12 @@ git config name          # Define o nome do usuário do Git
 git config email         # Define o e-mail do usuário do Git
 git checkout             # Muda de branch ou restaura arquivos
 git branch               # Lista, cria ou exclui branches
+
+git ls-remote --symref [URL] HEAD       # Mostra a branch padrão do repositório remoto
+git clone -b master [URL]               # Clona apenas a branch master
+git clone [URL]                         # Clona o repositório (branch padrão)
+cd [pasta]                              # Entra na pasta do projeto
+git checkout master                     # Alterna para a branch master
+git remote -v                           # Mostra os repositórios remotos configurados
+ls -la                                  # Lista todos os arquivos (incluindo ocultos)
+git ls-remote --heads origin            # Lista todas as branches do repositório remoto
