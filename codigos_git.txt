@@ -18,9 +18,20 @@ ls -la                                  # Lista todos os arquivos (incluindo ocu
 git ls-remote --heads origin            # Lista todas as branches do repositório remoto
 git rm                      # Remove arquivos do Git e do sistema de arquivos  
 git merge                # Combina branches (faz a junção das alterações)
-EX git log                  # Exibe o histórico de commits (versões anteriores)
-EX git fetch                # Busca atualizações do remoto sem alterar seus arquivos
-EX git reset                # Desfaz commits ou alterações (cuidado ao usar)
-EX git stash                # Guarda temporariamente alterações não commitadas
-EX git remote               # Mostra ou gerencia repositórios remotos configurados
-EX git diff                 # Mostra diferenças entre arquivos/commits/branches
+git fetch                # Busca atualizações do remoto sem alterar seus arquivos
+git reset                # Desfaz commits ou alterações (cuidado ao usar)
+git stash                # Guarda temporariamente alterações não commitadas
+git remote               # Mostra ou gerencia repositórios remotos configurados
+git diff                 # Mostra diferenças entre arquivos/commits/branches
+git log                      # Mostra histórico de commits (q para sair)
+git log --oneline            # Histórico compacto (1 commit por linha)
+git log -p                   # Mostra alterações em cada commit
+git log --graph              # Exibe branches e merges visualmente
+git show <commit-hash>       # Detalhes de um commit específico
+git reflog                   # Mostra TODOS os movimentos (incluindo resets)
+
+git rev-parse --show-toplevel  # Mostra o caminho completo da raiz do repositório Git atual
+pwd                           # Mostra o caminho completo do diretório atual (comando do sistema)
+
+git reset HEAD c.txt        # Remove do stage de exclusão
+git checkout -- c.txt       # Restaura o arquivo
