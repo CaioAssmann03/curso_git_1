@@ -16,3 +16,11 @@ git checkout master                     # Alterna para a branch master
 git remote -v                           # Mostra os repositórios remotos configurados
 ls -la                                  # Lista todos os arquivos (incluindo ocultos)
 git ls-remote --heads origin            # Lista todas as branches do repositório remoto
+git rm                      # Remove arquivos do Git e do sistema de arquivos  
+git merge                # Combina branches (faz a junção das alterações)
+EX git log                  # Exibe o histórico de commits (versões anteriores)
+EX git fetch                # Busca atualizações do remoto sem alterar seus arquivos
+EX git reset                # Desfaz commits ou alterações (cuidado ao usar)
+EX git stash                # Guarda temporariamente alterações não commitadas
+EX git remote               # Mostra ou gerencia repositórios remotos configurados
+EX git diff                 # Mostra diferenças entre arquivos/commits/branches
