@@ -39,3 +39,11 @@ git checkout -- c.txt       # Restaura o arquivo
 mv css/bannerinicia.css css/Banner_Inicia.css  # Renomeia o arquivo no sistema de arquivos (comando do sistema)
 git rm css/bannerinicia.css                   # Remove o arquivo antigo do rastreamento do Git
 git add css/Banner_Inicia.css                 # Adiciona o novo nome ao staging area do Git
+
+.gitignore                 # Arquivo que lista arquivos/pastas que o Git deve ignorar
+
+# Exemplos comuns para adicionar no .gitignore:
+node_modules/             # Ignora toda a pasta
+*.log                     # Ignora todos arquivos .log
+.DS_Store                 # Ignora arquivos do macOS
+.env                      # Ignora arquivos de configuração sensíveis
