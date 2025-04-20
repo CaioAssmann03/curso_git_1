@@ -1,0 +1,9 @@
+git init                 # Inicializa um repositório Git vazio
+git add                  # Adiciona arquivos à área de stage
+git commit -m            # Salva alterações com uma mensagem
+git status               # Mostra o estado atual dos arquivos
+git push -u origin master # Envia commits para o repositório remoto
+git config name          # Define o nome do usuário do Git
+git config email         # Define o e-mail do usuário do Git
+git checkout             # Muda de branch ou restaura arquivos
+git branch               # Lista, cria ou exclui branches
