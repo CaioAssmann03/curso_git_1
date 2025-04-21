@@ -48,6 +48,25 @@ node_modules/             # Ignora toda a pasta
 .DS_Store                 # Ignora arquivos do macOS
 .env                      # Ignora arquivos de configuração sensíveis
 
-git checkout -b "2_branch" 
-git branch
-git checkout
+# COMANDOS DE BRANCH:
+git checkout -b nova_branch    # Cria e muda para nova branch
+git branch                    # Lista branches locais
+git branch -a                 # Lista todas branches (locais e remotas)
+git checkout nome_branch      # Muda para branch existente
+git branch -d nome_branch     # Deleta branch local (seguro)
+git branch -D nome_branch     # Força deleção de branch não mergeada
+git merge outra_branch        # Mescla outra_branch na atual
+
+# COMANDOS DE STASH:
+git stash                     # Guarda alterações não commitadas
+git stash save "mensagem"     # Stash com descrição
+git stash list                # Lista todos os stashes
+git stash pop                 # Aplica último stash e remove da lista
+git stash apply               # Aplica último stash mas mantém na lista
+git stash drop                # Remove último stash
+git stash clear               # Limpa toda a lista de stash
+
+# COMANDOS ÚTEIS RELACIONADOS:
+git stash show -p             # Mostra diferenças do último stash
+git stash branch nova_branch  # Cria branch a partir do stash
+git cherry-pick commit_hash   # Pega commit específico de outra branch
