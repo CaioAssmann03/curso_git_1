@@ -47,3 +47,7 @@ node_modules/             # Ignora toda a pasta
 *.log                     # Ignora todos arquivos .log
 .DS_Store                 # Ignora arquivos do macOS
 .env                      # Ignora arquivos de configuração sensíveis
+
+git checkout -b "2_branch" 
+git branch
+git checkout
