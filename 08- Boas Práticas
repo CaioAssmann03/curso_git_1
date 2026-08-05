@@ -1,0 +1,643 @@
+# ⭐ Boas Práticas com Git e GitHub
+
+Dominar os comandos do Git é importante, mas utilizá-los da forma correta é o que diferencia um desenvolvedor iniciante de um profissional experiente.
+
+Neste capítulo você aprenderá boas práticas adotadas por empresas e projetos Open Source para manter o histórico organizado, facilitar a colaboração e evitar problemas durante o desenvolvimento.
+
+---
+
+# Faça Commits Pequenos
+
+Evite alterar dezenas de arquivos em um único commit.
+
+❌ Ruim
+
+```
+
+Commit gigante
+
+- Login
+- Dashboard
+- API
+- README
+- CSS
+- Banco
+
+```
+
+✅ Melhor
+
+```
+
+Commit 1 → Criar tela de Login
+
+Commit 2 → Validar formulário
+
+Commit 3 → Corrigir CSS
+
+Commit 4 → Atualizar documentação
+
+```
+
+Commits menores facilitam:
+
+- Revisão de código;
+- Encontrar bugs;
+- Reverter alterações.
+
+---
+
+# Escreva Boas Mensagens de Commit
+
+Uma mensagem deve explicar claramente o que foi alterado.
+
+## Bons exemplos
+
+```text
+Criar tela de login
+
+Adicionar autenticação JWT
+
+Corrigir validação de CPF
+
+Atualizar documentação
+
+Refatorar serviço de usuários
+```
+
+## Evite
+
+```text
+teste
+
+alterações
+
+update
+
+commit
+
+aaaa
+
+novo
+```
+
+---
+
+# Conventional Commits
+
+Muitas empresas utilizam um padrão chamado **Conventional Commits**.
+
+Formato:
+
+```text
+tipo: descrição
+```
+
+Exemplos:
+
+```text
+feat: adicionar autenticação
+
+fix: corrigir erro de login
+
+docs: atualizar README
+
+style: ajustar indentação
+
+refactor: reorganizar código
+
+test: adicionar testes
+
+chore: atualizar dependências
+
+perf: melhorar desempenho
+
+ci: configurar GitHub Actions
+
+build: atualizar processo de build
+```
+
+---
+
+# Principais Prefixos
+
+| Prefixo | Significado |
+|----------|-------------|
+| `feat:` | Nova funcionalidade |
+| `fix:` | Correção de bug |
+| `docs:` | Documentação |
+| `style:` | Formatação |
+| `refactor:` | Refatoração |
+| `test:` | Testes |
+| `perf:` | Performance |
+| `build:` | Build |
+| `ci:` | Integração Contínua |
+| `chore:` | Manutenção |
+
+---
+
+# Utilize Branches
+
+Nunca desenvolva diretamente na `main`.
+
+Fluxo recomendado:
+
+```
+main
+
+↓
+
+feature/login
+
+↓
+
+Pull Request
+
+↓
+
+Merge
+```
+
+Cada funcionalidade deve possuir sua própria branch.
+
+---
+
+# Nomeie as Branches Corretamente
+
+Exemplos:
+
+```text
+feature/login
+
+feature/dashboard
+
+feature/api
+
+bugfix/navbar
+
+hotfix/security
+
+docs/readme
+
+refactor/auth
+
+test/api
+```
+
+Evite:
+
+```text
+teste
+
+nova
+
+caio
+
+branch2
+
+aaa
+```
+
+---
+
+# Faça Pull Antes de Trabalhar
+
+Antes de iniciar uma tarefa:
+
+```bash
+git switch main
+
+git pull
+```
+
+Depois crie sua branch.
+
+Assim você evita conflitos.
+
+---
+
+# Faça Push com Frequência
+
+Não espere vários dias para enviar alterações.
+
+O ideal é:
+
+```
+Desenvolvimento
+
+↓
+
+Commit
+
+↓
+
+Push
+```
+
+Isso reduz o risco de perder trabalho.
+
+---
+
+# Revise Antes do Commit
+
+Antes de realizar um commit:
+
+```bash
+git status
+```
+
+Depois:
+
+```bash
+git diff
+```
+
+Somente então:
+
+```bash
+git commit
+```
+
+---
+
+# Utilize .gitignore
+
+Nem todos os arquivos devem ser enviados ao GitHub.
+
+Exemplo:
+
+```text
+node_modules/
+
+.env
+
+dist/
+
+build/
+
+.vscode/
+
+.idea/
+
+*.log
+```
+
+Nunca envie:
+
+- Senhas;
+- Tokens;
+- Arquivos temporários;
+- Dependências instaladas.
+
+---
+
+# Nunca Faça Commit de Arquivos Sensíveis
+
+Exemplos:
+
+```text
+.env
+
+config.json
+
+firebase.json
+
+credentials.json
+```
+
+Caso aconteça:
+
+- remova imediatamente;
+- altere as credenciais;
+- gere novas chaves.
+
+---
+
+# Utilize SSH
+
+Prefira SSH em vez de HTTPS.
+
+Exemplo:
+
+```text
+git@github.com:usuario/projeto.git
+```
+
+Benefícios:
+
+- mais seguro;
+- não solicita autenticação constantemente;
+- ideal para uso diário.
+
+---
+
+# Proteja a Branch Main
+
+Em projetos colaborativos:
+
+✅ Exigir Pull Request.
+
+✅ Exigir aprovação.
+
+✅ Bloquear Force Push.
+
+✅ Exigir testes automatizados.
+
+---
+
+# Faça Code Review
+
+Antes do Merge:
+
+- Leia o código novamente.
+- Procure melhorias.
+- Verifique nomes.
+- Confirme se a documentação foi atualizada.
+
+---
+
+# Utilize Pull Requests Pequenos
+
+❌ Evite
+
+```
+3.000 linhas modificadas
+```
+
+✅ Melhor
+
+```
+120 linhas
+
+1 funcionalidade
+
+1 objetivo
+```
+
+Pull Requests pequenos são aprovados muito mais rapidamente.
+
+---
+
+# Mantenha o README Atualizado
+
+Todo projeto deve possuir um README contendo:
+
+- descrição;
+- tecnologias;
+- instalação;
+- utilização;
+- estrutura;
+- licença;
+- autor.
+
+---
+
+# Utilize Tags
+
+Sempre marque versões importantes.
+
+```bash
+git tag v1.0.0
+```
+
+Enviar:
+
+```bash
+git push origin v1.0.0
+```
+
+---
+
+# Versionamento Semântico (SemVer)
+
+Formato:
+
+```
+MAJOR.MINOR.PATCH
+```
+
+Exemplo:
+
+```
+1.4.2
+```
+
+### PATCH
+
+Correção de bugs.
+
+```
+1.0.0
+
+↓
+
+1.0.1
+```
+
+---
+
+### MINOR
+
+Nova funcionalidade compatível.
+
+```
+1.0.0
+
+↓
+
+1.1.0
+```
+
+---
+
+### MAJOR
+
+Mudança incompatível.
+
+```
+1.0.0
+
+↓
+
+2.0.0
+```
+
+---
+
+# Faça Backup no GitHub
+
+Mesmo trabalhando sozinho:
+
+```
+Commit
+
+↓
+
+Push
+```
+
+Nunca mantenha apenas a cópia local.
+
+---
+
+# Organize seu Histórico
+
+Prefira:
+
+```
+feat: criar login
+
+fix: corrigir autenticação
+
+docs: atualizar README
+```
+
+Ao invés de:
+
+```
+teste
+
+novo
+
+commit
+
+update
+```
+
+---
+
+# Utilize Aliases
+
+Exemplo:
+
+```bash
+git config --global alias.st status
+
+git config --global alias.lg "log --graph --oneline --all"
+```
+
+Agora basta:
+
+```bash
+git st
+
+git lg
+```
+
+---
+
+# Checklist Antes do Push
+
+Antes de enviar seu código:
+
+- Código compila?
+- Testes passaram?
+- Não existem arquivos desnecessários?
+- README atualizado?
+- `.env` está no `.gitignore`?
+- Mensagem do commit está clara?
+- Branch correta?
+- `git status` limpo?
+
+Se tudo estiver correto:
+
+```bash
+git push
+```
+
+---
+
+# Erros Comuns
+
+❌ Trabalhar direto na `main`
+
+❌ Fazer Force Push sem necessidade
+
+❌ Commits gigantes
+
+❌ Mensagens de commit sem significado
+
+❌ Não utilizar `.gitignore`
+
+❌ Não revisar alterações antes do commit
+
+❌ Esquecer de fazer Pull
+
+❌ Enviar senhas para o GitHub
+
+---
+
+# Fluxo Profissional
+
+```
+Atualizar main
+
+↓
+
+Criar branch
+
+↓
+
+Desenvolver
+
+↓
+
+git status
+
+↓
+
+git diff
+
+↓
+
+git add
+
+↓
+
+git commit
+
+↓
+
+git push
+
+↓
+
+Pull Request
+
+↓
+
+Code Review
+
+↓
+
+Merge
+
+↓
+
+Excluir branch
+```
+
+---
+
+# Resumo das Boas Práticas
+
+| Boa prática | Benefício |
+|-------------|-----------|
+| Commits pequenos | Histórico organizado |
+| Conventional Commits | Padronização |
+| Trabalhar em branches | Segurança |
+| Atualizar antes de desenvolver | Evita conflitos |
+| Revisar antes do commit | Reduz erros |
+| Utilizar `.gitignore` | Evita arquivos desnecessários |
+| Nunca enviar segredos | Segurança |
+| Fazer Pull Requests pequenos | Revisão mais rápida |
+| Criar Tags | Controle de versões |
+| Utilizar SemVer | Versionamento padronizado |
+| Fazer Push frequentemente | Backup e colaboração |
+| Atualizar README | Melhor documentação |
+
+---
+
+# Conclusão
+
+Utilizar Git e GitHub vai muito além de conhecer comandos. Bons hábitos, como criar commits pequenos, escrever mensagens claras, trabalhar em branches, revisar alterações antes do commit e seguir padrões como Conventional Commits e Versionamento Semântico, tornam o histórico do projeto mais organizado e facilitam o trabalho em equipe. Essas práticas são amplamente adotadas em empresas e projetos Open Source, contribuindo para um desenvolvimento mais seguro, colaborativo e profissional.
