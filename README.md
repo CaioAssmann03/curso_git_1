@@ -55,7 +55,7 @@ Este repositório foi criado durante meus estudos de Git e GitHub e evoluiu para
 
 ## Boas práticas
 
-- [08 - Boas práticas](08-Boas-Praticas.md)
+- [08 - Boas práticas](08-Boas_Praticas.md)
 
 ---
 
@@ -63,7 +63,7 @@ Este repositório foi criado durante meus estudos de Git e GitHub e evoluiu para
 
 Também existe um resumo rápido dos principais comandos.
 
-➡ **[Cheat Sheet](Cheat-Sheet.md)**
+- **[09 - Cheat Sheet](Cheat_Sheet.md)**
 
 ---
 
