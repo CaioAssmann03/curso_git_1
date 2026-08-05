@@ -27,35 +27,35 @@ Este repositório foi criado durante meus estudos de Git e GitHub e evoluiu para
 
 ## Primeiros passos
 
-- [01 - Primeiros Passos](01-primeiros-passos.md)
+- [01 - Primeiros Passos](01-Primeiros-passos.md)
 
 ## Trabalhando com Branches
 
-- [02 - Branches](02-branches.md)
+- [02 - Branches](02-Branches.md)
 
 ## Merge e Rebase
 
-- [03 - Merge e Rebase](03-merge-rebase.md)
+- [03 - Merge e Rebase](03-Merge-Rebase.md)
 
 ## GitHub
 
-- [04 - GitHub](04-github.md)
+- [04 - GitHub](04-GitHub.md)
 
 ## Corrigindo Erros
 
-- [05 - Desfazendo Erros](05-desfazendo-erros.md)
+- [05 - Desfazendo Erros](05-Desfazendo-Erros.md)
 
 ## Git Avançado
 
-- [06 - Git Avançado](06-git-avancado.md)
+- [06 - Git Avançado](06-Git-Avançado.md)
 
 ## Git Flow
 
-- [07 - Git Flow](07-git-flow.md)
+- [07 - Git Flow](07-Git-Flow.md)
 
 ## Boas práticas
 
-- [08 - Boas práticas](08-boas-praticas.md)
+- [08 - Boas práticas](08-Boas-Praticas.md)
 
 ---
 
@@ -63,7 +63,7 @@ Este repositório foi criado durante meus estudos de Git e GitHub e evoluiu para
 
 Também existe um resumo rápido dos principais comandos.
 
-➡ **[Cheat Sheet](cheatsheet.md)**
+➡ **[Cheat Sheet](Cheat-Sheet.md)**
 
 ---
 
