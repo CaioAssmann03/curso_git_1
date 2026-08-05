@@ -63,7 +63,7 @@ Este repositório foi criado durante meus estudos de Git e GitHub e evoluiu para
 
 Também existe um resumo rápido dos principais comandos.
 
-- **[09 - Cheat Sheet](Cheat-Sheet.md)**
+- **[09 - Cheat Sheet](09-Cheat-Sheet.md)**
 
 ---
 
