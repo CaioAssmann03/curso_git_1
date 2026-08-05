@@ -55,7 +55,7 @@ Este repositório foi criado durante meus estudos de Git e GitHub e evoluiu para
 
 ## Boas práticas
 
-- [08 - Boas práticas](08-Boas_Práticas.md)
+- [08 - Boas práticas](08-Boas_Praticas.md)
 
 ---
 
