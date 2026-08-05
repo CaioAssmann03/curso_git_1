@@ -25,41 +25,37 @@ Este repositório foi criado durante meus estudos de Git e GitHub e evoluiu para
 
 # Conteúdo
 
-## Introdução
-
-- [01 - Instalação](01-instalacao.md)
-
 ## Primeiros passos
 
-- [02 - Primeiros Passos](02-primeiros-passos.md)
+- [01 - Primeiros Passos](01-primeiros-passos.md)
 
 ## Trabalhando com Branches
 
-- [03 - Branches](03-branches.md)
+- [02 - Branches](02-branches.md)
 
 ## Merge e Rebase
 
-- [04 - Merge e Rebase](04-merge-rebase.md)
+- [03 - Merge e Rebase](03-merge-rebase.md)
 
 ## GitHub
 
-- [05 - GitHub](05-github.md)
+- [04 - GitHub](04-github.md)
 
 ## Corrigindo Erros
 
-- [06 - Desfazendo Erros](06-desfazendo-erros.md)
+- [05 - Desfazendo Erros](05-desfazendo-erros.md)
 
 ## Git Avançado
 
-- [07 - Git Avançado](07-git-avancado.md)
+- [06 - Git Avançado](06-git-avancado.md)
 
 ## Git Flow
 
-- [08 - Git Flow](08-git-flow.md)
+- [07 - Git Flow](07-git-flow.md)
 
 ## Boas práticas
 
-- [09 - Boas práticas](09-boas-praticas.md)
+- [08 - Boas práticas](08-boas-praticas.md)
 
 ---
 
